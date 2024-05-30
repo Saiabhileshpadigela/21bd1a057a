@@ -8,7 +8,6 @@ const ProductDetails = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // Mocking the endpoint since the exact product details endpoint isn't provided in the prompt
                 const response = await fetch(`http://20.244.56.144/test/products/${productId}`);
                 const data = await response.json();
                 setProduct(data);
